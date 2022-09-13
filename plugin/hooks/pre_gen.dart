@@ -28,6 +28,8 @@ void run(HookContext context) {
       '${context.vars["plugin_package_name"]}/example/lib',
       '${context.vars["plugin_package_name"]}/lib',
       '${context.vars["plugin_package_name"]}/test',
+      '${context.vars["plugin_package_name"]}/CHANGELOG.md',
+      '${context.vars["plugin_package_name"]}/LICENSE',
     ],
   );
 }
