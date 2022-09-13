@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () => sample(),
+              onPressed: () => print(sample()),
               child: const Text('Click me'),
             ),
           ],
