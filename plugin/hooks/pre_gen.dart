@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:mason/mason.dart';
 
 void run(HookContext context) {
-  print("Hello from pre_gen.dart");
+  context.logger.info('Running pre_gen hook');
 
   // Add a new plugin flutter
   final ProcessResult createPackageResult = Process.runSync(
@@ -30,6 +30,9 @@ void run(HookContext context) {
       '${context.vars["plugin_package_name"]}/test',
       '${context.vars["plugin_package_name"]}/CHANGELOG.md',
       '${context.vars["plugin_package_name"]}/LICENSE',
+      '${context.vars["plugin_package_name"]}/pubspec.yaml',
     ],
   );
+
+  context.logger.info('Finished running pre_gen hook');
 }
