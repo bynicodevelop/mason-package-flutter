@@ -1,7 +1,7 @@
 name: {{plugin_package_name}}
 description: {{plugin_description}}
 version: 0.0.1
-homepage:
+homepage: {{repository}}
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
