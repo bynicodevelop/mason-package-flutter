@@ -31,3 +31,8 @@ vars:
     description: The description of the plugin.
     default: A new plugin created with the Mason CLI.
     prompt: What is the description of the plugin?
+  copyright:
+    type: string
+    description: The copyright of the plugin.
+    default: © Nico Develop
+    prompt: What is the copyright of the plugin?
